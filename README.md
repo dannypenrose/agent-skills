@@ -71,6 +71,14 @@ Skills activate automatically when Claude Code detects matching context -- no ma
 
 These skills reference standards from the [Engineering Standards](https://github.com/dannypenrose/engineering-standards) repository, which contains 50 documents covering the full development lifecycle. The standards are licensed separately under [CC BY-NC-ND 4.0](https://github.com/dannypenrose/engineering-standards/blob/main/LICENSE).
 
+## Disclaimer
+
+These skills have been developed and refined by a software engineering professional with 20+ years of industry experience. They are designed to improve the consistency and quality of AI-assisted development by providing structured context and enforcement rules.
+
+However, large language models are probabilistic systems. Even with well-crafted skills and comprehensive standards, Claude may misapply rules, skip checks, apply guidance from the wrong stack, or produce output that looks correct but contains subtle deviations. Skills reduce the frequency of these issues -- they do not eliminate them.
+
+**All AI-assisted output should be reviewed by an experienced software engineer before being committed, merged, or deployed.** These skills are a productivity tool, not a substitute for professional judgement. The author accepts no liability for defects, security vulnerabilities, or other issues arising from code produced with the assistance of these skills.
+
 ## License
 
 [MIT](./LICENSE) -- use, modify, and share freely with attribution.
