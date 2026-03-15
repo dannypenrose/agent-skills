@@ -2,9 +2,9 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-A collection of 8 Claude Code skills that automatically enforce engineering standards during development. Each skill detects the tech stack being worked on, fetches the relevant standard, and applies it silently as code is written or reviewed.
+A collection of 8 agent skills that automatically enforce engineering standards during AI-assisted development. Each skill detects the tech stack being worked on, fetches the relevant standard, and applies it silently as code is written or reviewed.
 
-These skills are designed for use with [Claude Code](https://docs.anthropic.com/en/docs/claude-code) and reference the [Engineering Standards](https://github.com/dannypenrose/engineering-standards) repository as their source of truth.
+These skills are designed for use with any agentic coding tool that supports custom instructions or skill-like mechanisms -- including Claude Code, Codex, Gemini, Cursor, Windsurf, and others. They reference the [Engineering Standards](https://github.com/dannypenrose/engineering-standards) repository as their source of truth.
 
 ## Skills
 
@@ -32,6 +32,8 @@ Skills are designed to be **practical, not pedantic** -- they apply standards wi
 
 ## Installation
 
+### Claude Code
+
 Copy any skill directory into your Claude Code skills folder:
 
 ```bash
@@ -55,6 +57,10 @@ ln -s ~/.claude/agent-skills/coding-standards ~/.claude/skills/coding-standards
 
 Skills activate automatically when Claude Code detects matching context -- no manual invocation needed.
 
+### Other Agents
+
+For agents that support custom instructions (Codex, Cursor, Windsurf, etc.), copy the content of the relevant `SKILL.md` file into your agent's instruction configuration. The detection logic and standard references are written in plain markdown and are not tied to any specific platform.
+
 ## Supported Stacks
 
 | Stack | Coding | API Design | Detected By |
@@ -69,13 +75,13 @@ Skills activate automatically when Claude Code detects matching context -- no ma
 
 ## Engineering Standards
 
-These skills reference standards from the [Engineering Standards](https://github.com/dannypenrose/engineering-standards) repository, which contains 50 documents covering the full development lifecycle. The standards are licensed separately under [CC BY-NC-ND 4.0](https://github.com/dannypenrose/engineering-standards/blob/main/LICENSE).
+These skills reference standards from the [Engineering Standards](https://github.com/dannypenrose/engineering-standards) repository, which contains 51 documents covering the full development lifecycle. The standards are licensed separately under [CC BY-NC-ND 4.0](https://github.com/dannypenrose/engineering-standards/blob/main/LICENSE).
 
 ## Disclaimer
 
-These skills have been developed and refined by a software engineering professional with 20+ years of industry experience. They are designed to improve the consistency and quality of AI-assisted development by providing structured context and enforcement rules.
+These skills have been developed and refined by Danny Penrose, who has over 20 years of experience in the technology industry. They are designed to improve the consistency and quality of AI-assisted development by providing structured context and enforcement rules.
 
-However, large language models are probabilistic systems. Even with well-crafted skills and comprehensive standards, Claude may misapply rules, skip checks, apply guidance from the wrong stack, or produce output that looks correct but contains subtle deviations. Skills reduce the frequency of these issues -- they do not eliminate them.
+However, large language models are probabilistic systems. Even with well-crafted skills and comprehensive standards, an AI agent may misapply rules, skip checks, apply guidance from the wrong stack, or produce output that looks correct but contains subtle deviations. Skills reduce the frequency of these issues -- they do not eliminate them.
 
 **All AI-assisted output should be reviewed by an experienced software engineer before being committed, merged, or deployed.** These skills are a productivity tool, not a substitute for professional judgement. The author accepts no liability for defects, security vulnerabilities, or other issues arising from code produced with the assistance of these skills.
 
