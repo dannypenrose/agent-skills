@@ -18,11 +18,15 @@ Ensure all documentation follows the engineering documentation standards.
 3. Apply the standards as you write
 4. Cite specific rules when correcting approach
 
-## Step 1: Fetch the Standard
+## Step 1: Fetch the Standards
 
 Use the WebFetch tool to load the documentation standard. Do NOT skip this step.
 
+**Documentation Standards (always fetch):**
 `https://raw.githubusercontent.com/dannypenrose/engineering-standards/main/governance/documentation-standards.md`
+
+**ADR Template** (fetch when working on architecture decision records):
+`https://raw.githubusercontent.com/dannypenrose/engineering-standards/main/governance/adr-template.md`
 
 ## Step 2: Identify What You're Writing
 

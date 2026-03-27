@@ -46,6 +46,12 @@ https://raw.githubusercontent.com/dannypenrose/engineering-standards/main/govern
 https://raw.githubusercontent.com/dannypenrose/engineering-standards/main/governance/data-governance.md
 ```
 
+**If the work involves self-hosted infrastructure** (VPS, bare-metal, self-managed servers, reverse proxies, DNS, SSL certificates), also read:
+
+```
+https://raw.githubusercontent.com/dannypenrose/engineering-standards/main/governance/self-hosting-standards.md
+```
+
 ## Step 2: Apply Security Checks
 
 ### OWASP Top 10 Verification

@@ -19,6 +19,9 @@ Detect the type of file being edited and read ONLY the 1-2 relevant standards do
 | Deploy scripts, systemd units, rsync configs, release workflows | `https://raw.githubusercontent.com/dannypenrose/engineering-standards/main/development/deployment-standards.md` |
 | Caddy/Nginx configs, server setup, DNS, SSL, systemd services | `https://raw.githubusercontent.com/dannypenrose/engineering-standards/main/governance/self-hosting-standards.md` |
 | Public repo setup, LICENSE, open-source CI | `https://raw.githubusercontent.com/dannypenrose/engineering-standards/main/governance/open-source.md` |
+| Git hooks, Husky, lint-staged configs | `https://raw.githubusercontent.com/dannypenrose/engineering-standards/main/development/git-hooks-husky.md` |
+| Local dev setup, dev scripts, workspace config | `https://raw.githubusercontent.com/dannypenrose/engineering-standards/main/development/local-development.md` |
+| VS Code workspace tasks, `.code-workspace` files | `https://raw.githubusercontent.com/dannypenrose/engineering-standards/main/development/workspace-tasks.md` |
 
 **Procedure:**
 1. Identify which files are being created or modified.

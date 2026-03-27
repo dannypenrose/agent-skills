@@ -59,6 +59,9 @@ Based on the detected stack, use the WebFetch tool to load the appropriate codin
 - **Task involves adding/updating/managing dependencies** — also fetch:
   `https://raw.githubusercontent.com/dannypenrose/engineering-standards/main/development/dependency-management.md`
 
+- **Task involves git workflow, branching, or commit conventions** — also fetch:
+  `https://raw.githubusercontent.com/dannypenrose/engineering-standards/main/development/git-standards.md`
+
 ## Step 3: Apply Standards Silently
 
 Once you have read the standard:
