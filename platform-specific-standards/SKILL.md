@@ -1,5 +1,5 @@
 ---
-description: "Enforce platform-specific standards when developing for mobile (Expo/React Native), desktop (Tauri), Chrome extensions, or when implementing real-time communication (WebSocket/SSE), internationalization (i18n/l10n), feature flags, or accessibility features. Use this skill whenever the user works on mobile app screens, native modules, EAS builds, Tauri commands, Chrome extension manifests, WebSocket/SSE implementations, translation strings, locale handling, feature flag definitions, progressive rollouts, ARIA attributes, keyboard navigation, or screen reader support — even if they don't explicitly mention the standard."
+description: "Enforce platform-specific standards when developing for mobile (Expo/React Native), desktop (Tauri), Chrome extensions, or when implementing real-time communication (WebSocket/SSE), internationalization (i18n/l10n), feature flags, or accessibility features. Use this skill whenever the user works on mobile app screens, native modules, EAS builds, Tauri commands, Chrome extension manifests, WebSocket/SSE implementations, translation strings, locale handling, feature flag definitions, progressive rollouts, ARIA attributes, keyboard navigation, or screen reader support, even if they don't explicitly mention the standard."
 ---
 
 # Platform-Specific Standards
@@ -8,7 +8,7 @@ This skill enforces engineering standards for specialized platforms and cross-cu
 
 ## Detection Rules
 
-Identify the platform or feature from context clues. Only read the 1-2 standards that apply — never all of them.
+Identify the platform or feature from context clues. Only read the 1-2 standards that apply, never all of them.
 
 | Signal | Platform/Feature | Standards Document |
 |--------|------------------|--------------------|
@@ -23,13 +23,13 @@ Identify the platform or feature from context clues. Only read the 1-2 standards
 ## Workflow
 
 1. **Detect**: Determine which platform or feature the current task involves using the signals above.
-2. **Read**: Use the WebFetch tool to load ONLY the relevant standards document(s) — one or two at most.
+2. **Read**: Use the WebFetch tool to load ONLY the relevant standards document(s), one or two at most.
 3. **Apply**: Enforce the standards from those documents throughout the task. Flag violations, suggest corrections, and follow the documented patterns.
 4. **Validate**: Before completing work, verify compliance with the loaded standards.
 
 ## Rules
 
-- This skill is a lightweight dispatcher. The referenced standards documents contain all the detail — do not duplicate their content here.
+- This skill is a lightweight dispatcher. The referenced standards documents contain all the detail, do not duplicate their content here.
 - If multiple platforms apply (e.g., mobile + feature flags), read both relevant documents.
 - Never read all seven documents. Be selective based on what the task actually touches.
 - If no signals are detected, do not activate. This skill is only for the specific platforms and features listed above.

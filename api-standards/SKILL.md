@@ -6,7 +6,7 @@ description: >
   request/response types, API versioning, error responses, pagination, middleware,
   guards, interceptors, or any HTTP API surface. Covers NestJS, ASP.NET Core, and
   FastAPI patterns. Also applies when discussing API contracts, OpenAPI specs,
-  versioning strategy, deprecation, or REST conventions — even if the user doesn't
+  versioning strategy, deprecation, or REST conventions, even if the user doesn't
   explicitly mention 'API standards'.
 ---
 
@@ -14,7 +14,7 @@ description: >
 
 When this skill activates, you MUST detect the project's tech stack and read the
 appropriate API design standard document before writing or reviewing any API code.
-Do not summarize the standards from memory — always read the actual file.
+Do not summarize the standards from memory; always read the actual file.
 
 ## Step 1: Detect Tech Stack
 

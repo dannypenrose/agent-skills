@@ -4,7 +4,7 @@ description: >
   Enforce language-specific coding standards when writing, creating, implementing,
   building, or refactoring code. Use this skill whenever the user asks to write code,
   create a component, implement a feature, build a service, refactor existing code,
-  or review code quality in any language — TypeScript/JavaScript, C#/.NET, Python,
+  or review code quality in any language, TypeScript/JavaScript, C#/.NET, Python,
   or any other stack. Also triggers when discussing naming conventions, file organization,
   project structure, code patterns, API design, or architecture decisions. This skill
   ensures all code follows the authoritative engineering standards. Activate for any
@@ -50,16 +50,16 @@ Based on the detected stack, use the WebFetch tool to load the appropriate codin
 
 ### Conditional standards (fetch IF relevant to the task):
 
-- **Monorepo detected** (turbo.json or pnpm-workspace.yaml exists) — also fetch:
+- **Monorepo detected** (turbo.json or pnpm-workspace.yaml exists), also fetch:
   `https://raw.githubusercontent.com/dannypenrose/engineering-standards/main/development/code-sharing.md`
 
-- **Task involves frontend state management** (React state, stores, context, reducers, signals) — also fetch:
+- **Task involves frontend state management** (React state, stores, context, reducers, signals), also fetch:
   `https://raw.githubusercontent.com/dannypenrose/engineering-standards/main/development/state-management.md`
 
-- **Task involves adding/updating/managing dependencies** — also fetch:
+- **Task involves adding/updating/managing dependencies**, also fetch:
   `https://raw.githubusercontent.com/dannypenrose/engineering-standards/main/development/dependency-management.md`
 
-- **Task involves git workflow, branching, or commit conventions** — also fetch:
+- **Task involves git workflow, branching, or commit conventions**, also fetch:
   `https://raw.githubusercontent.com/dannypenrose/engineering-standards/main/development/git-standards.md`
 
 ## Step 3: Apply Standards Silently
@@ -70,6 +70,18 @@ Once you have read the standard:
 - Apply the patterns as you write code. Do not dump a list of rules before starting work.
 - When the user's proposed approach would violate a standard, mention the specific rule and explain why the standard recommends a different approach.
 - When making architectural decisions (e.g., where to place a file, how to name a function, how to structure a module), prefer the pattern documented in the standard over personal preference or general convention.
+
+### Prose inside code: UK English, never an em dash
+
+Everything you write in words follows the same rule as the docs: comments, JSDoc,
+commit messages, log lines, error messages, test names and UI strings. **Never
+use an em dash (U+2014, the long dash).** Use the mark the sentence calls for:
+parentheses for an aside, a semicolon between two independent clauses, a colon to
+introduce an explanation, a comma to continue the sentence. En dashes stay in
+ranges (`23-24 hours`). UK spelling throughout: organisation, behaviour, initialise.
+
+Do not swap an em dash for a comma mechanically; that produces comma splices. If
+what follows could stand alone as a sentence, it needs a semicolon or a full stop.
 
 ## Step 4: Cite When Correcting
 

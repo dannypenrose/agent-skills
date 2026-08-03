@@ -6,7 +6,7 @@ description: >
   statements, configures monitoring, sets up health checks, implements circuit breakers, defines
   SLOs/SLIs, creates alerting rules, works on error budgets, or discusses incident response.
   Also triggers when the user works on retry logic, backoff strategies, graceful degradation,
-  or chaos engineering — even if they don't explicitly mention 'observability' or 'reliability'.
+  or chaos engineering, even if they don't explicitly mention 'observability' or 'reliability'.
 trigger: auto
 ---
 

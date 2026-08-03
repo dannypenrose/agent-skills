@@ -1,6 +1,6 @@
 ---
 name: snackbar-enforcement
-description: "Enforce consistent snackbar/toast notification patterns across the entire platform. Use this skill whenever the user creates, modifies, or reviews snackbar/toast notifications, notification providers, or feedback components. Triggers when code uses enqueueSnackbar, toast(), notify(), or any notification API — even if the user doesn't explicitly mention 'snackbar standards'."
+description: "Enforce consistent snackbar/toast notification patterns across the entire platform. Use this skill whenever the user creates, modifies, or reviews snackbar/toast notifications, notification providers, or feedback components. Triggers when code uses enqueueSnackbar, toast(), notify(), or any notification API, even if the user doesn't explicitly mention 'snackbar standards'."
 ---
 
 # Snackbar / Toast Notification Enforcement
@@ -30,7 +30,7 @@ Check the project's `package.json` for known notification libraries:
 | Chakra UI toast | `@chakra-ui/react` | `useToast()` |
 | MUI Snackbar | `@mui/material` | `<Snackbar>` component |
 
-If no notification library exists, recommend **notistack** as the default — it provides the best balance of customisability, Material Design integration, and stacking behaviour.
+If no notification library exists, recommend **notistack** as the default; it provides the best balance of customisability, Material Design integration, and stacking behaviour.
 
 ## Step 2: Locate the Existing Pattern
 
@@ -77,7 +77,7 @@ Read these files to understand the established pattern before writing any notifi
 Client updated successfully
 Failed to delete contact
 Form submitted
-Session expired — please log in again
+Session expired, please log in again
 File uploaded (3 of 5)
 ```
 
@@ -133,7 +133,7 @@ export * from 'notistack'; // re-export everything
 export { default as SnackbarProvider } from './snackbar-provider';
 ```
 
-This pattern means swapping the underlying library only requires changing the wrapper — not every file that shows a notification.
+This pattern means swapping the underlying library only requires changing the wrapper, not every file that shows a notification.
 
 ## Step 4: Flag Violations
 

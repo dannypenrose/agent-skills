@@ -1,6 +1,6 @@
 ---
 name: deployment-and-infrastructure
-description: "Enforce deployment, CI/CD, containerization, and infrastructure standards when working on deployment configurations, Dockerfiles, docker-compose files, GitHub Actions workflows, deployment scripts, environment files, reverse proxy configs, or server setup. Use this skill whenever the user creates or modifies Dockerfiles, CI pipelines, .env files, nginx/caddy configs, or discusses deployment strategy, blue-green deployments, container orchestration, rollback procedures, or self-hosting — even if they don't explicitly mention 'deployment standards'."
+description: "Enforce deployment, CI/CD, containerization, and infrastructure standards when working on deployment configurations, Dockerfiles, docker-compose files, GitHub Actions workflows, deployment scripts, environment files, reverse proxy configs, or server setup. Use this skill whenever the user creates or modifies Dockerfiles, CI pipelines, .env files, nginx/caddy configs, or discusses deployment strategy, blue-green deployments, container orchestration, rollback procedures, or self-hosting, even if they don't explicitly mention 'deployment standards'."
 ---
 
 # Deployment & Infrastructure Standards

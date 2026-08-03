@@ -61,4 +61,4 @@ pm2 start ~/.devdash/scripts/<name>.sh --name <name> --interpreter bash --no-aut
 - Use `pm2 delete` (not `pm2 stop`) before restarting to avoid stale process configs
 - Check `pm2 list` before starting to avoid duplicate processes
 - If a port is in use: `lsof -ti :<port> | xargs kill -9`
-- DevDash itself runs on port 3099 — do not start other services on this port
+- DevDash itself runs on port 3099, do not start other services on this port

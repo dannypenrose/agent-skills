@@ -1,6 +1,6 @@
 ---
 name: documentation-standards
-description: Enforce documentation standards when writing, updating, or reviewing documentation files (.md, .mdx), README files, changelogs, API docs, architecture decision records, code comments, or any technical writing. Use this skill whenever the user creates new documentation, restructures docs, writes READMEs, updates changelogs, adds code comments or JSDoc/XML annotations, configures Nextra navigation, writes Mermaid diagrams, or discusses documentation strategy — even if the user doesn't explicitly mention 'documentation standards'.
+description: Enforce documentation standards when writing, updating, or reviewing documentation files (.md, .mdx), README files, changelogs, API docs, architecture decision records, code comments, or any technical writing. Use this skill whenever the user creates new documentation, restructures docs, writes READMEs, updates changelogs, adds code comments or JSDoc/XML annotations, configures Nextra navigation, writes Mermaid diagrams, or discusses documentation strategy, even if the user doesn't explicitly mention 'documentation standards'.
 metadata:
   author: dannypenrose
   version: "1.0.0"
@@ -61,9 +61,28 @@ Once you have read the standard:
 **Content Standards:**
 - Write for readers, not writers
 - Active voice, present tense
-- Show, don't tell — use code examples
+- Show, don't tell, use code examples
 - Inclusive language (avoid gendered pronouns, ableist terms)
 - UK English spelling for user-facing content
+
+**Punctuation: never use an em dash (U+2014, the long dash).** This applies
+everywhere: prose, code comments, commit messages, UI copy, task files and chat
+replies. Pick the mark the sentence actually calls for:
+
+| Job the dash was doing | Use instead |
+|---|---|
+| Bracketing an aside mid-sentence | parentheses, or a pair of commas |
+| Joining two independent clauses | semicolon |
+| Introducing an explanation or a list | colon |
+| Continuing the same sentence | comma |
+| A cross-reference tacked on the end | parentheses |
+| "not applicable" in a table cell | `n/a` |
+| Separating a title from its subtitle | colon |
+
+En dashes are correct UK usage in ranges and stay.
+
+Do not swap one character for another. A blind replace of an em dash with a comma
+produces comma splices, which is worse than the dash.
 
 **MDX/Nextra Compatibility:**
 - Escape bare `<` and `>` outside code blocks (use `&lt;`, `&gt;`, or backticks)
@@ -104,11 +123,11 @@ If you need to push back on the user's approach:
 - Explain the reasoning briefly
 - Suggest the compliant alternative
 
-Example: "The documentation standard requires Diataxis-compliant directory structure — this guide belongs in `guides/` not at the root of the docs folder (see: Directory Structure section)."
+Example: "The documentation standard requires Diataxis-compliant directory structure; this guide belongs in `guides/` not at the root of the docs folder (see: Directory Structure section)."
 
 ## Rules
 
-1. **Always fetch the standard first.** Standards evolve — do not rely on memory.
+1. **Always fetch the standard first.** Standards evolve, do not rely on memory.
 2. **Never dump standards content.** Apply them silently, cite only when correcting.
 3. **MDX safety is critical.** Unescaped `<` followed by digits/non-letters breaks Nextra builds.
 4. **Internal links must include section prefix and subdirectory.** This is the most commonly missed rule.

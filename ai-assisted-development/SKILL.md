@@ -1,6 +1,6 @@
 ---
 name: ai-assisted-development
-description: Enforce AI-assisted development standards when working with AI coding agents, reviewing AI-generated code, writing prompts for AI tools, or configuring AI development environments. Use this skill whenever the user discusses AI code review, prompt engineering, agentic coding patterns, CLAUDE.md configuration, sub-agent orchestration, MCP server setup, or AI workflow quality gates. Also triggers when reviewing code that was AI-generated, setting up Claude Code projects, configuring coding assistants, or discussing AI failure modes and mitigations — even if the user doesn't explicitly mention 'AI standards'.
+description: Enforce AI-assisted development standards when working with AI coding agents, reviewing AI-generated code, writing prompts for AI tools, or configuring AI development environments. Use this skill whenever the user discusses AI code review, prompt engineering, agentic coding patterns, CLAUDE.md configuration, sub-agent orchestration, MCP server setup, or AI workflow quality gates. Also triggers when reviewing code that was AI-generated, setting up Claude Code projects, configuring coding assistants, or discussing AI failure modes and mitigations, even if the user doesn't explicitly mention 'AI standards'.
 metadata:
   author: dannypenrose
   version: "1.0.0"
@@ -91,11 +91,11 @@ If you need to push back on the user's approach:
 - Explain the reasoning briefly
 - Suggest the compliant alternative
 
-Example: "The AI Code Review standard identifies 'pattern invention' as a common AI failure mode — the suggested API doesn't exist in this framework version. Let me verify against the actual documentation first."
+Example: "The AI Code Review standard identifies 'pattern invention' as a common AI failure mode; the suggested API doesn't exist in this framework version. Let me verify against the actual documentation first."
 
 ## Rules
 
-1. **Always fetch the standard first.** Standards evolve — do not rely on memory.
+1. **Always fetch the standard first.** Standards evolve, do not rely on memory.
 2. **Never dump standards content.** Apply them silently, cite only when correcting.
 3. **Multiple standards can apply.** Fetch all relevant ones for the task.
 4. **AI failure modes are critical.** Always watch for pattern invention, phantom APIs, and confident incorrectness when reviewing AI output.

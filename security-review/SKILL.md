@@ -1,6 +1,6 @@
 ---
 name: security-review
-description: "Enforce security standards when writing or reviewing code that handles authentication, authorization, user input, secrets, encryption, or any security-sensitive operations. Use this skill whenever the user works on login flows, password handling, JWT tokens, session management, API keys, CORS, CSP headers, rate limiting, file uploads, SQL queries, environment variables with secrets, or infrastructure configuration. Also triggers for code reviews that mention security, OWASP compliance, or vulnerability fixes — even if the user doesn't explicitly ask for a 'security review'."
+description: "Enforce security standards when writing or reviewing code that handles authentication, authorization, user input, secrets, encryption, or any security-sensitive operations. Use this skill whenever the user works on login flows, password handling, JWT tokens, session management, API keys, CORS, CSP headers, rate limiting, file uploads, SQL queries, environment variables with secrets, or infrastructure configuration. Also triggers for code reviews that mention security, OWASP compliance, or vulnerability fixes, even if the user doesn't explicitly ask for a 'security review'."
 ---
 
 # Security Review
